@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Square Generator!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <form id="userNumbers">
+            <label for="first_integer">First Integer: </label><br>
+            <input type="number" id="first_integer" name="first_integer" min="0" max="99" value="1"><br>
+            <label for="second_integer">Second Integer: </label><br>
+            <input type="number" id="second_integer" name="second_integer" min="0" max="99" value="2"><br>
+            <label for="third_integer">Third Integer: </label><br>
+            <input type="number" id="third_integer" name="third_integer" min="0" max="99" value="4"><br>
+            <label for="fourth_integer">Fourth Integer: </label><br>
+            <input type="number" id="fourth_integer" name="fourth_integer" min="0" max="99" value="8"><br>
+        </form><br>
+        <button onclick="generateMagicSquare()">GENERATE!</button>
+    </div><br>
+
+    <div>
+        <table>
+            <tr>
+                <td>0</td>
+                <td><span id="cell01">0</span></td>
+                <td><span id="cell02">0</span></td>
+                <td><span id="cell03">0</span></td>
+            </tr>
+            <tr>
+                <td><span id="cell10">0</span></td>
+                <td><span id="cell11">0</span></td>
+                <td><span id="cell12">0</span></td>
+                <td><span id="cell13">0</span></td>
+            </tr>
+            <tr>
+                <td><span id="cell20">0</span></td>
+                <td><span id="cell21">0</span></td>
+                <td><span id="cell22">0</span></td>
+                <td><span id="cell23">0</span></td>
+            </tr>
+            <tr>
+                <td><span id="cell30">0</span></td>
+                <td><span id="cell31">0</span></td>
+                <td><span id="cell32">0</span></td>
+                <td><span id="cell33">0</span></td>
+            </tr>
+        </table>
+        <p id="magicsum"></p>
+    </div>
+    <script src="magic_square.js"></script>
+</body>
+</html>

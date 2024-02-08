@@ -3,6 +3,12 @@ let num0 = 0;
 let num1 = 0;
 let num2 = 0;
 let num3 = 0;
+const form = document.querySelector("form");
+
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+    generateMagicSquare();
+})
 
 function generateMagicSquare() {
     num0 = Number(userNumbers.elements[0].value);
